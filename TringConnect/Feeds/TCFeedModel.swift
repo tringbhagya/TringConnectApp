@@ -8,17 +8,7 @@
 import Foundation
 
 struct TCFeedModel: Decodable {
-
-//    private enum CodingKeys: String, CodingKey {
-//        case domain
-//        case marketDefaultZoom
-//        case appID = "AppID"
-//        case scheme = "AppURLScheme"
-//        case comscoreParam = "ComscoreParam"
-//        case marketGroup = "market-group"
-//    }
     let items: [TCFeed]?
-  
 }
 
 struct TCFeed: Decodable {
