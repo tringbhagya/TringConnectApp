@@ -40,12 +40,9 @@ class TCMediaViewController: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizer.Direction.right :
                 self.imageIndex -= 1
-                if self.imageIndex <= 0 {
-                    self.imageIndex = imageList.count
-                }
-                if self.imageIndex >= imageList.count {
-                    self.imageIndex = imageList.count - 1
-                }
+                
+                checkAndGoToFirst()
+                checkAndGoToLast()
                 
                 UIView.animate(withDuration: 0.1) { [weak self] in
                     guard let strongSelf = self else { return }
@@ -54,9 +51,7 @@ class TCMediaViewController: UIViewController {
 
             case UISwipeGestureRecognizer.Direction.left:
                 self.imageIndex += 1
-                if self.imageIndex >= imageList.count {
-                    self.imageIndex = 0
-                }
+                checkAndGoToFirst()
                 UIView.animate(withDuration: 0.1) { [weak self] in
                     guard let strongSelf = self else { return }
                     strongSelf.imageView.image = UIImage(named: strongSelf.imageList[strongSelf.imageIndex])
@@ -64,6 +59,18 @@ class TCMediaViewController: UIViewController {
             default:
                 break
             }
+        }
+    }
+    
+    private func checkAndGoToFirst() {
+        if self.imageIndex >= imageList.count {
+            self.imageIndex = 0
+        }
+    }
+    
+    private func checkAndGoToLast() {
+        if self.imageIndex <= 0 {
+            self.imageIndex = imageList.count
         }
     }
 
