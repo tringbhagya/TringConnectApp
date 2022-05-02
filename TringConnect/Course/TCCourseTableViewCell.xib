@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TCCourseTableViewCell" rowHeight="544" id="R5p-Bj-W8K" customClass="TCCourseTableViewCell" customModule="TringConnect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="544"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R5p-Bj-W8K" id="vdb-Br-5Vl">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="544"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqy-8i-W08" userLabel="CourseView">
+                        <rect key="frame" x="24" y="2" width="342" height="337"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umA-ox-PTS" customClass="TCButton" customModule="TringConnect" customModuleProvider="target">
+                                <rect key="frame" x="318" y="17" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8kR-M9-jvd"/>
+                                    <constraint firstAttribute="width" constant="24" id="Uav-E1-EiB"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVt-E8-syT" customClass="TCLabel" customModule="TringConnect" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="15" width="145" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Rbw-GA-vWj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
+                                <color key="textColor" name="Gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="735-9h-1NJ">
+                                <rect key="frame" x="0.0" y="67" width="342" height="270"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="SFi-Tg-rgD"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bQP-YQ-HvE">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="735-9h-1NJ" secondAttribute="bottom" id="1HX-sY-kVt"/>
+                            <constraint firstItem="735-9h-1NJ" firstAttribute="top" secondItem="NVt-E8-syT" secondAttribute="bottom" constant="24" id="6x9-9x-47p"/>
+                            <constraint firstItem="NVt-E8-syT" firstAttribute="leading" secondItem="Lqy-8i-W08" secondAttribute="leading" id="Ib5-RJ-hjq"/>
+                            <constraint firstItem="735-9h-1NJ" firstAttribute="leading" secondItem="Lqy-8i-W08" secondAttribute="leading" id="Jgf-rE-Cai"/>
+                            <constraint firstItem="NVt-E8-syT" firstAttribute="top" secondItem="Lqy-8i-W08" secondAttribute="top" constant="15" id="LPS-Dh-QVO"/>
+                            <constraint firstAttribute="trailing" secondItem="umA-ox-PTS" secondAttribute="trailing" id="iI5-JE-qm9"/>
+                            <constraint firstAttribute="trailing" secondItem="735-9h-1NJ" secondAttribute="trailing" id="jgb-qx-sp7"/>
+                            <constraint firstAttribute="height" constant="337" id="l0I-hP-iR2"/>
+                            <constraint firstItem="umA-ox-PTS" firstAttribute="top" secondItem="Lqy-8i-W08" secondAttribute="top" constant="17" id="mZ5-w0-tFX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S43-n3-MhW" userLabel="LikeCommentView" customClass="TCLikeCommentSectionView" customModule="TringConnect" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="339" width="390" height="205"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="205" id="U1t-fh-xgN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="S43-n3-MhW" secondAttribute="bottom" id="5xK-fR-wGf"/>
+                    <constraint firstItem="S43-n3-MhW" firstAttribute="leading" secondItem="vdb-Br-5Vl" secondAttribute="leading" id="O6S-KZ-eM9"/>
+                    <constraint firstItem="Lqy-8i-W08" firstAttribute="leading" secondItem="vdb-Br-5Vl" secondAttribute="leading" constant="24" id="WfH-kL-vrW"/>
+                    <constraint firstItem="S43-n3-MhW" firstAttribute="top" secondItem="Lqy-8i-W08" secondAttribute="bottom" id="qod-gq-t7G"/>
+                    <constraint firstAttribute="trailing" secondItem="Lqy-8i-W08" secondAttribute="trailing" constant="24" id="rfe-k7-U29"/>
+                    <constraint firstAttribute="trailing" secondItem="S43-n3-MhW" secondAttribute="trailing" id="w9P-JO-V6V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="735-9h-1NJ" id="ZzJ-Zt-TeV"/>
+                <outlet property="likeCommentSection" destination="S43-n3-MhW" id="HM1-D4-bDV"/>
+                <outlet property="moreButton" destination="umA-ox-PTS" id="qU6-U1-6ik"/>
+                <outlet property="titleLabel" destination="NVt-E8-syT" id="F5Z-9U-awi"/>
+            </connections>
+            <point key="canvasLocation" x="23.188405797101453" y="42.857142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

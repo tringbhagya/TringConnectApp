@@ -1,0 +1,150 @@
+{
+  "items": [
+    {
+        "id": 1,
+        "name": "John Mathis",
+        "role": "Product Delivery Manager",
+        "post": "Successfully delivered this great kitchen app to market. Kudos the entire team.",
+        "type": "post",
+        "tags": [
+            "Network",
+            "kitchenapp",
+            "foodies",
+            "productdesign"
+          ],
+        "media": {
+                "images": [
+          "post1"
+        ],
+                "videos": [
+          
+        ]
+      },
+        "userAvatar": "john_mathis",
+        "date": "2022-05-01",
+        "time": "18:34:56",
+              "likes": 240,
+              "comments": 12
+    },
+    {
+      "id": 2,
+      "name": "Sridhar Rao",
+      "role": "Director Marketing Sales",
+      "post": "Good Marketing makes the company look smart. Great marketing makes customer feel smart",
+      "type": "hybrid_post",
+      "tags": [
+        "marketing",
+        "sales",
+        "Strategy",
+        "businessgoal",
+        "digital"
+      ],
+      "media": {
+        "images": [
+          "hybrid_image1",
+          "hybrid_image2",
+          "hybrid_image3",
+          "hybrid_video"
+        ],
+        "videos": [
+        ]
+      },
+      "userAvatar": "sridhar_rao",
+      "date": "2022-05-01",
+      "time": "16:42:06",
+      "likes": 210,
+      "comments": 50
+    },
+    {
+      "id": 3,
+      "name": "Landon Murray",
+      "role": "Creative Director",
+      "post": "Design is all about, using your brain 100%",
+      "type": "post",
+      "tags": [
+        "Creative design",
+        "Brainstroming",
+        "UX/Ui",
+        "Research"
+      ],
+      "media": {
+        "images": [
+          "post2"
+        ],
+        "videos": [
+          
+        ]
+      },
+      "userAvatar": "landon_murray",
+      "date": "2022-04-30",
+      "time": "18:26:15",
+      "likes": 329,
+      "comments": 40
+    },
+    {
+      "id": 4,
+      "name": "tringapps",
+      "role": "Management",
+      "post": "tringapps is now an AWS partner.",
+      "type": "banner",
+      "tags": [
+        "management",
+        "tringers",
+        "tringapps",
+        "AWS"
+      ],
+      "media": {
+        "images": [
+          
+        ],
+        "videos": [
+          
+        ],
+        "banner": {
+          "image": "banner",
+          "title": "Introducing Amazon EMR serverless",
+          "website": "aws.amazon.com",
+          "duration": "2 mins read"
+        }
+      },
+      "userAvatar": "tringapps",
+      "date": "2022-04-30",
+      "time": "13:43:04",
+      "likes": 438,
+      "comments": 45
+    },
+    {
+      "id": 5,
+      "name": "Latest Courses",
+      "role": "",
+      "post": "",
+      "type": "course",
+      "tags": [
+        
+      ],
+      "media": {
+        "images": [
+          
+        ],
+        "videos": [
+          
+        ],
+        "courses": [
+          {
+            "image": "course1",
+            "title": "Amazon Dynamo DB"
+          },
+          {
+            "image": "course2",
+            "title": "Portfolio Management"
+          }
+        ]
+      },
+      "userAvatar": "",
+      "date": "2022-04-28",
+      "time": "23:32:19",
+      "likes": 321,
+      "comments": 25
+    }
+  ]
+}
