@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,6 +28,9 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-YH-dUr">
                         <rect key="frame" x="9" y="9" width="169" height="163"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="163" id="OTL-sT-wFw"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="4"/>
@@ -46,7 +50,7 @@
                         <rect key="frame" x="14" y="217" width="159" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrS-6p-8Jj" customClass="TCLabel" customModule="TringConnect" customModuleProvider="target">
-                                <rect key="frame" x="50" y="12" width="59" height="20"/>
+                                <rect key="frame" x="35" y="12" width="89" height="20"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -54,8 +58,8 @@
                         </subviews>
                         <color key="backgroundColor" name="Green"/>
                         <constraints>
-                            <constraint firstItem="qrS-6p-8Jj" firstAttribute="leading" secondItem="1Ql-P0-UTw" secondAttribute="leading" constant="50" id="2aC-h2-OLX"/>
-                            <constraint firstAttribute="trailing" secondItem="qrS-6p-8Jj" secondAttribute="trailing" constant="50" id="Hsb-MC-lal"/>
+                            <constraint firstItem="qrS-6p-8Jj" firstAttribute="leading" secondItem="1Ql-P0-UTw" secondAttribute="leading" constant="35" id="2aC-h2-OLX"/>
+                            <constraint firstAttribute="trailing" secondItem="qrS-6p-8Jj" secondAttribute="trailing" constant="35" id="Hsb-MC-lal"/>
                             <constraint firstAttribute="bottom" secondItem="qrS-6p-8Jj" secondAttribute="bottom" constant="12" id="Y38-WQ-yTo"/>
                             <constraint firstAttribute="height" constant="44" id="j88-Gr-73c"/>
                         </constraints>
@@ -65,14 +69,43 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DT2-XD-m22">
+                        <rect key="frame" x="147" y="17" width="24" height="24"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XB-DE-MwK" customClass="TCButton" customModule="TringConnect" customModuleProvider="target">
+                                <rect key="frame" x="5" y="6" width="14" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="cKS-yf-kJO"/>
+                                    <constraint firstAttribute="height" constant="12" id="qug-3g-EDD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5XB-DE-MwK" firstAttribute="leading" secondItem="DT2-XD-m22" secondAttribute="leading" constant="5" id="4zf-yy-ZVi"/>
+                            <constraint firstAttribute="width" constant="24" id="5cL-Ho-onz"/>
+                            <constraint firstItem="5XB-DE-MwK" firstAttribute="top" secondItem="DT2-XD-m22" secondAttribute="top" constant="6" id="UnN-v1-kP4"/>
+                            <constraint firstAttribute="trailing" secondItem="5XB-DE-MwK" secondAttribute="trailing" constant="5" id="gJB-d7-kBD"/>
+                            <constraint firstAttribute="bottom" secondItem="5XB-DE-MwK" secondAttribute="bottom" constant="6" id="pdb-TD-sTc"/>
+                            <constraint firstAttribute="height" constant="24" id="suc-a2-RhL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="yQp-YH-dUr" firstAttribute="top" secondItem="ruB-A6-t6r" secondAttribute="top" constant="9" id="7uZ-Bs-q9P"/>
                     <constraint firstAttribute="trailing" secondItem="4GP-Be-GlK" secondAttribute="trailing" constant="32" id="8q5-QS-b03"/>
+                    <constraint firstItem="DT2-XD-m22" firstAttribute="top" secondItem="ruB-A6-t6r" secondAttribute="top" constant="17" id="ADj-53-hJa"/>
                     <constraint firstItem="1Ql-P0-UTw" firstAttribute="leading" secondItem="ruB-A6-t6r" secondAttribute="leading" constant="14" id="Akn-Dg-A3Q"/>
                     <constraint firstItem="4GP-Be-GlK" firstAttribute="top" secondItem="yQp-YH-dUr" secondAttribute="bottom" constant="12" id="ClE-BR-W2b"/>
                     <constraint firstAttribute="bottom" secondItem="1Ql-P0-UTw" secondAttribute="bottom" constant="9" id="FFK-iA-PYI"/>
                     <constraint firstAttribute="trailing" secondItem="yQp-YH-dUr" secondAttribute="trailing" constant="9" id="HKV-4o-Cb1"/>
+                    <constraint firstAttribute="trailing" secondItem="DT2-XD-m22" secondAttribute="trailing" constant="16" id="KXp-ER-Xxt"/>
                     <constraint firstItem="1Ql-P0-UTw" firstAttribute="top" secondItem="4GP-Be-GlK" secondAttribute="bottom" constant="16" id="bOe-8f-p4F"/>
                     <constraint firstAttribute="trailing" secondItem="1Ql-P0-UTw" secondAttribute="trailing" constant="14" id="hOp-dm-8z0"/>
                     <constraint firstItem="yQp-YH-dUr" firstAttribute="leading" secondItem="ruB-A6-t6r" secondAttribute="leading" constant="9" id="mT4-C5-uXt"/>
@@ -81,6 +114,7 @@
             </collectionViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="bookmarkButton" destination="5XB-DE-MwK" id="kFS-In-jxN"/>
                 <outlet property="imageView" destination="yQp-YH-dUr" id="eY1-Qv-rl1"/>
                 <outlet property="registerLabel" destination="qrS-6p-8Jj" id="bTi-8d-ckF"/>
                 <outlet property="registerView" destination="1Ql-P0-UTw" id="5Sy-CB-e3R"/>
@@ -96,5 +130,8 @@
         <namedColor name="Green">
             <color red="0.35686274509803922" green="0.73725490196078436" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

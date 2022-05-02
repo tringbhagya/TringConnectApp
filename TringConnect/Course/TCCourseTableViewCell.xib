@@ -43,7 +43,7 @@
                                 <color key="textColor" name="Gray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="735-9h-1NJ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="735-9h-1NJ">
                                 <rect key="frame" x="0.0" y="67" width="342" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -81,6 +81,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="S43-n3-MhW" secondAttribute="bottom" id="5xK-fR-wGf"/>
                     <constraint firstItem="S43-n3-MhW" firstAttribute="leading" secondItem="vdb-Br-5Vl" secondAttribute="leading" id="O6S-KZ-eM9"/>
+                    <constraint firstItem="Lqy-8i-W08" firstAttribute="top" secondItem="vdb-Br-5Vl" secondAttribute="top" constant="2" id="RTK-yG-Fu7"/>
                     <constraint firstItem="Lqy-8i-W08" firstAttribute="leading" secondItem="vdb-Br-5Vl" secondAttribute="leading" constant="24" id="WfH-kL-vrW"/>
                     <constraint firstItem="S43-n3-MhW" firstAttribute="top" secondItem="Lqy-8i-W08" secondAttribute="bottom" id="qod-gq-t7G"/>
                     <constraint firstAttribute="trailing" secondItem="Lqy-8i-W08" secondAttribute="trailing" constant="24" id="rfe-k7-U29"/>

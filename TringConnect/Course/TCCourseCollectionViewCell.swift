@@ -15,6 +15,7 @@ class TCCourseCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: TCLabel!
     @IBOutlet weak var registerLabel: TCLabel!
     @IBOutlet weak var registerView: UIView!
+    @IBOutlet weak var bookmarkButton: TCButton!
     
     private var isRegisterSelected = false
     
@@ -24,7 +25,9 @@ class TCCourseCollectionViewCell: UICollectionViewCell {
     }
     
     func initialSetUp() {
-        registerView.backgroundColor = TCColorPalette.gray.color
+        registerView.backgroundColor = TCColorPalette.green.color
+        registerLabel.textColor = UIColor.white
+        
         isRegisterSelected = false
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(registerViewTapped(gesture:)))
@@ -32,11 +35,15 @@ class TCCourseCollectionViewCell: UICollectionViewCell {
 
         registerView.isUserInteractionEnabled = true
         registerView.addGestureRecognizer(tapGesture)
+        
+        bookmarkButton.setImageNames(TCConstant.kLikeIcon, selectedIcon: TCConstant.kLikeIconFilled)
     }
     
     @objc func registerViewTapped(gesture: UIGestureRecognizer) {
         isRegisterSelected = !isRegisterSelected
-        registerView.backgroundColor = isRegisterSelected ? TCColorPalette.green.color : TCColorPalette.gray.color
+        registerView.backgroundColor = !isRegisterSelected ? TCColorPalette.green.color : TCColorPalette.registerBgGray.color
+        registerLabel.textColor =  !isRegisterSelected ? UIColor.white : TCColorPalette.gray.color
+        registerLabel.text =  !isRegisterSelected ? "Register" : "Registered"
     }
     
     func configureUI(_ courseData: TCCourse) {

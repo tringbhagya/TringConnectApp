@@ -17,6 +17,7 @@ enum TCColorPalette: String, CaseIterable, Codable {
     case likeTextGray
     case tagTextGray
     case postTextGray
+    case registerBgGray
     
     var colorName: String {
         switch self {
@@ -27,6 +28,7 @@ enum TCColorPalette: String, CaseIterable, Codable {
             case .likeTextGray: return "LikeTextGray"
             case .tagTextGray: return "TagTextGray"
             case .postTextGray: return "PostTextGray"
+            case .registerBgGray: return "RegisterBgGray"
         }
     }
     

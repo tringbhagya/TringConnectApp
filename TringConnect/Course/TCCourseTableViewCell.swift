@@ -60,7 +60,7 @@ extension TCCourseTableViewCell: UICollectionViewDataSource {
 
 extension TCCourseTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 390.0, height: 270.0)
+        return CGSize(width: 187.0, height: 270.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
