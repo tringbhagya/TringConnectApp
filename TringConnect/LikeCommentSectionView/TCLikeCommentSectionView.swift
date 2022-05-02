@@ -49,13 +49,13 @@ class TCLikeCommentSectionView: UIView {
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-        if self.addCommentField.isFirstResponder == true {
+        if self.addCommentField.isFirstResponder {
             self.frame.origin.y -= 300
          }
     }
 
     @objc func keyboardWillHide(notification: NSNotification){
-        if self.addCommentField.isFirstResponder == true {
+        if self.addCommentField.isFirstResponder {
            self.frame.origin.y += 300
         }
     }

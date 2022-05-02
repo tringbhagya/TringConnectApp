@@ -16,7 +16,7 @@ struct TCParserUtility {
         case parsingError
     }
     
-    static func getDataFromJson<T>(_ name: String, _ type: T.Type, _ bundle: Bundle? = nil) -> Result<T, Error> where T: Decodable {
+    static func getDataFromJson<T>(_ name: String, _ bundle: Bundle? = nil) -> Result<T, Error> where T: Decodable {
                 
         let dataBundle = (bundle != nil) ? bundle : Bundle.main
         
