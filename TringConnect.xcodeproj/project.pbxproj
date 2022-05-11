@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2647B11A281F43C700B23167 /* TCMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647B119281F43C700B23167 /* TCMediaViewController.swift */; };
 		2647B11D281F554000B23167 /* TCStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647B11C281F554000B23167 /* TCStoryTableViewCell.swift */; };
-		2647B11F281F557000B23167 /* TCStoryTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647B11E281F557000B23167 /* TCStoryTableViewCellViewModel.swift */; };
 		2647B121281F563900B23167 /* TCStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2647B120281F563900B23167 /* TCStoryTableViewCell.xib */; };
 		2647B123281F576D00B23167 /* TCStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647B122281F576D00B23167 /* TCStoryCollectionViewCell.swift */; };
 		2647B125281F579300B23167 /* TCStoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2647B124281F579300B23167 /* TCStoryCollectionViewCell.xib */; };
@@ -71,7 +70,6 @@
 /* Begin PBXFileReference section */
 		2647B119281F43C700B23167 /* TCMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMediaViewController.swift; sourceTree = "<group>"; };
 		2647B11C281F554000B23167 /* TCStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCStoryTableViewCell.swift; sourceTree = "<group>"; };
-		2647B11E281F557000B23167 /* TCStoryTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCStoryTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		2647B120281F563900B23167 /* TCStoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCStoryTableViewCell.xib; sourceTree = "<group>"; };
 		2647B122281F576D00B23167 /* TCStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCStoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2647B124281F579300B23167 /* TCStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCStoryCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			children = (
 				2647B11C281F554000B23167 /* TCStoryTableViewCell.swift */,
 				2647B120281F563900B23167 /* TCStoryTableViewCell.xib */,
-				2647B11E281F557000B23167 /* TCStoryTableViewCellViewModel.swift */,
 				2647B122281F576D00B23167 /* TCStoryCollectionViewCell.swift */,
 				2647B124281F579300B23167 /* TCStoryCollectionViewCell.xib */,
 				2647B126281F5B2C00B23167 /* TCNewStoryCollectionViewCell.swift */,
@@ -459,7 +456,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				267710E4281DA1DC00263349 /* TCColorPalette.swift in Sources */,
-				2647B11F281F557000B23167 /* TCStoryTableViewCellViewModel.swift in Sources */,
 				2647B130281F705A00B23167 /* TCCourseCollectionViewCell.swift in Sources */,
 				267710D5281D52C100263349 /* TCTextStyle.swift in Sources */,
 				267710A5281D4EEC00263349 /* TCFeedsViewController.swift in Sources */,

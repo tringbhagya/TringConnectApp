@@ -13,7 +13,6 @@ class TCStoryTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let viewModel = TCStoryTableViewCellViewModel()
     let storyImages = ["story1", "story2", "story3", "story4", "story5"]
     let storyTitles = ["HR Team", "Creactive Bees", "TechMads", "Cloud 9", "Terrific Tringers"]
     
@@ -60,9 +59,6 @@ extension TCStoryTableViewCell: UICollectionViewDataSource {
 
 extension TCStoryTableViewCell: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if indexPath.row == 0 {
-            return CGSize(width: 60.0, height: 60.0)
-        }
         return CGSize(width: 60.0, height: 75.0)
     }
     
